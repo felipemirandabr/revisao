@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão de HTML</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+
+<body>
+    <main>
+        <h1>HTML5</h1>
+        <h2>O que é HTML?</h2>
+        <p>A HTML (HyperText Markup Language) é uma linguagem de marcação padrão para criação de sites. Ela é responsável por definir a estrutura de páginas web através de elementos diversos. Esses elementos são como rótulos para as diferentes partes de uma página, e determinam a forma de apresentação do conteúdo pelo navegador.</p>
+        <h2>Elementos HTML</h2>
+        <p>Um elemento HTML é composto por tag de abertura, conteúdo e tag de fechamento. A tag de fechamento  diferencia-se
+        pelo uso da barra (<mark>/</mark>).</p>
+        <strong><pre>&lt;nomedatag&gt; O conteúdo vai aqui... &lt;/nomedatag&gt;</pre></strong>
+        <p>Alguns elementos podem até ser exibidos corretamente sem o udo da tag de fechamento, porém,é recomendado evitar tal prática. Outra recomendação é o uso de letras minúsculas, apesar do HTML não ser <abbr title="Não diferencia maíusculas de minúsculas">case sensitive</abbr>.</p>
+        
+        <p>Os elementos HTML podem ser aninhados, isto é, alguns elementos podem conter outros elementos.</p>
+        <strong>
+        <pre>
+&lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+      &lt;head&gt;
+        &lt;title&gt;Exemplo de Aninhamento&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+      &lt;/body&gt;
+  &lt;/html&gt;
+        </pre>
+        </strong>
+        <ul>
+            <li><mark>&lt;!DOCTYPE html&gt;</mark> declara que o documento é um documento HTML5</li>
+            <li><mark>&lt;html&gt;</mark> elemento raiz de uma página HTML</li>
+            <li><mark>&lt;head&gt;</mark> contém meta informações sobre a página HTML, isto é, conteúdo não vísivel</li>
+            <li><mark>&lt;title&gt;</mark> especifica um título para a página HTML (mostrado na barra de título do
+                navegador ou na guia da página)</li>
+            <li><mark>&lt;body&gt;</mark> define o corpo do documento e é um contêiner para todo o conteúdo visível</li>
+        </ul>
+        <h2>Tags HTML</h2>
+        <p>São palavras reservadas utilizadas entres colchetes angulares (<mark>&lt; e &gt;</mark>). A maioria das tags
+            possui uma abertura e um fechamento. Mas, existem os chamados elementos vazios, representados por tags que
+            não
+            possuem conteúdo e que são autofechadas. As tags podem ter atributos ou parâmetros, os quais podem receber
+            diferentes valores responsáveis por comportamentos diversos.</p>
+        <h2>Navegadores Web</h2>
+        <p>Os navegadores têm a função de interpretar o documento HTML e apresentar seu conteúdo corretamente. Isso é
+            possível mediante o uso adequado das tags, que não são exibidas em si, mas ,configuram a exibição de toda a
+            página.</p>
+        <h2>Editores HTML</h2>
+        <p>A criação e modificação de páginas web podem ser feitas através de editores HTML profissionais ou até mesmo
+            através de simples editores de texto. Para visualizar o documento HTML, deve-se salvar o arquivo com a
+            extensão
+            <mark>.html</mark>, <em>ex: index.html</em>
+        </p>
+        <h2>Estutura Básica</h2>
+        <p>A estrutura atualmente proposta de um documento HTML básico é a seguinte:</p>
+        <strong>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width,
+    initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+        </strong>
+        <p>Todos os documentos HTML devem ser iniciados pela declaração <mark>&lt;!DOCTYPE html&gt;</mark>. Esta
+            declaração
+            aparece uma só vez e antes de quaisquer outras tags, representando o tipo de documento a ser exibido pelo
+            navegador. O documento HTML tem seu início e fim demarcados pelo uso das tags
+            <mark>&lt;html&gt;...&lt;/html&gt</mark>;. O atributo <mark>lang</mark> da tag <mark>html</mark> sinaliza a
+            linguagem e região de origem do documento.
+        </p>
+    </main>
+
+</body>
+
+</html>
